@@ -27,14 +27,14 @@ const Project = () => {
       desc: "A simple todo app with add/delete functionality.",
       skills: ["React", "JS"],
       image: "https://via.placeholder.com/300",
-      href: "#",
+      href: "https://github.com/pranavmalve/Amazon-Delivery-Analysis",
     },
     {
       title: "Weather App",
       desc: "Fetches real-time weather data using API.",
       skills: ["React", "API"],
       image: "https://via.placeholder.com/300",
-      href: "#",
+      href: "https://github.com/pranavmalve/Amazon-Laptop-Scraper",
     },
   ];
 

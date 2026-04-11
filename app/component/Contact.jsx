@@ -49,7 +49,7 @@ const Contact = () => {
           <button
             title="LinkedIn"
             onClick={() =>
-              window.open("https://www.linkedin.com/in/pranavmalve2/", "_blank")
+              window.open("https://www.linkedin.com/in/pranavmalve2/3", "_blank")
             }
             className="bg-blue-600 text-white p-4 rounded-full text-xl shadow-md hover:scale-110 hover:shadow-lg transition"
           >
