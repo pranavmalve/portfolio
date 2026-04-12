@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,10 +18,18 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
-        <h1 className="text-2xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-          Pranav Malve
-        </h1>
+          
+<div className="flex items-center gap-2 cursor-pointer">
+  
+  <Image
+    src="/profile.png"
+    alt="logo"
+    width={240}
+    height={200}
+    className="object-contain"
+  />
 
+</div>
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 text-gray-700 font-medium">
           {["home", "about", "projects", "contact"].map((item) => (

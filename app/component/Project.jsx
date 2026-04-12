@@ -19,15 +19,15 @@ const Project = () => {
       title: "Portfolio Website",
       desc: "A personal portfolio built using React and Tailwind.",
       skills: ["React", "JS", "Tailwind"],
-      image: "https://via.placeholder.com/400",
+      image: "/portfolioWebsite.png",
       href: "https://www.amazon.com",
     },
     {
       title: "Todo App",
       desc: "A simple todo app with add/delete functionality.",
-      skills: ["React", "JS"],
-      image: "https://via.placeholder.com/400",
-      href: "https://github.com/pranavmalve/Amazon-Delivery-Analysis",
+      skills: ["React", "JS" ,"Tailwind"],
+      image: "/todo.png",
+      href: "https://todo-list-zeta-azure-32.vercel.app/",
     },
     {
       title: "Weather App",
@@ -39,8 +39,8 @@ const Project = () => {
     {
       title: "Amazon Laptop Scraper",
       desc: "Python + Selenium scraper to extract laptop data from Amazon.",
-      skills: ["Python", "Selenium"],
-      image: "https://via.placeholder.com/400",
+      skills: ["Python", "Selenium" , "Web Scrapping"],
+      image: "/amazon_project.png",
       href: "https://github.com/pranavmalve/Amazon-Laptop-Scraper",
     },
   ];
