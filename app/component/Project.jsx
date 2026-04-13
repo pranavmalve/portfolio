@@ -34,7 +34,7 @@ const Project = () => {
       desc: "This is a functional To-Do Web App built using React. It helps users stay organized by allowing them to add, delete, and track tasks. The app is designed with a focus on a clean user experience, featuring a custom-built checkbox system and a perfectly centered, responsive layout. It also remembers your data so nothing gets deleted when you refresh the page.",
       skills: ["React", "Javascript","Css"],
       image: "smartmanager.png",
-      href: "https://github.com/pranavmalve/Amazon-Laptop-Scraper",
+      href: "https://smart-task-manager-one-henna.vercel.app/",
     },
     {
       title: "Amazon Laptop Scraper",

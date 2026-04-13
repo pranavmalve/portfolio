@@ -26,7 +26,7 @@ const HomePage = () => {
           animate={{ opacity: 1 }}
           className="text-gray-600 text-lg md:text-xl mb-8"
         >
-          Frontend Developer building modern web experiences.
+          Passionate about learning new things, improving my skills, and growing in the tech field.
         </motion.p>
 
         <div className="flex justify-center gap-4">
