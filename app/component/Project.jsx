@@ -20,7 +20,7 @@ const Project = () => {
       desc: "A personal portfolio built using React and Tailwind.",
       skills: ["React", "JS", "Tailwind"],
       image: "/portfolioWebsite.png",
-      href: "https://www.amazon.com",
+      href: "https://portfolio-one-gilt-41.vercel.app/",
     },
     {
       title: "Todo App",
@@ -30,10 +30,10 @@ const Project = () => {
       href: "https://todo-list-zeta-azure-32.vercel.app/",
     },
     {
-      title: "Weather App",
-      desc: "Fetches real-time weather data using API.",
-      skills: ["React", "API"],
-      image: "https://via.placeholder.com/400",
+      title: "Smart Task Manager",
+      desc: "This is a functional To-Do Web App built using React. It helps users stay organized by allowing them to add, delete, and track tasks. The app is designed with a focus on a clean user experience, featuring a custom-built checkbox system and a perfectly centered, responsive layout. It also remembers your data so nothing gets deleted when you refresh the page.",
+      skills: ["React", "Javascript","Css"],
+      image: "smartmanager.png",
       href: "https://github.com/pranavmalve/Amazon-Laptop-Scraper",
     },
     {
