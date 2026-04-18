@@ -3,21 +3,7 @@ import React, { useState } from "react";
 import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent! (Connect backend later)");
-    setForm({ name: "", email: "", message: "" });
-  };
+  const [submitted, setSubmitted] = useState(false);
 
   return (
     <section
@@ -34,9 +20,7 @@ const Contact = () => {
         {/* 🔥 Social Icons */}
         <div className="flex justify-center gap-6 mb-12">
 
-          {/* WhatsApp */}
           <button
-            title="WhatsApp"
             onClick={() =>
               window.open("https://wa.me/918956612668", "_blank")
             }
@@ -45,22 +29,18 @@ const Contact = () => {
             <FaWhatsapp />
           </button>
 
-          {/* LinkedIn */}
           <button
-            title="LinkedIn"
             onClick={() =>
-              window.open("https://www.linkedin.com/in/pranavmalve2/3", "_blank")
+              window.open("https://www.linkedin.com/in/pranavmalve2/", "_blank")
             }
             className="bg-blue-600 text-white p-4 rounded-full text-xl shadow-md hover:scale-110 hover:shadow-lg transition"
           >
             <FaLinkedin />
           </button>
 
-          {/* Email */}
           <button
-            title="Email"
             onClick={() =>
-              window.open("mailto:pranavmalve2@email.com", "_blank")
+              window.open("mailto:pranavmalve2@gmail.com", "_blank")
             }
             className="bg-gray-800 text-white p-4 rounded-full text-xl shadow-md hover:scale-110 hover:shadow-lg transition"
           >
@@ -69,17 +49,24 @@ const Contact = () => {
 
         </div>
 
-        {/* Form */}
+        {/* ✅ Success Message */}
+        {submitted && (
+          <p className="text-green-600 text-center mb-6 font-medium">
+            ✅ Message sent successfully!
+          </p>
+        )}
+
+        {/* 🔥 Form */}
         <form
-          onSubmit={handleSubmit}
+          action="https://formspree.io/f/mdaygqlj"  // 
+          method="POST"
+          onSubmit={() => setSubmitted(true)}
           className="bg-gray-100 p-8 rounded-2xl shadow-md space-y-6"
         >
           <input
             type="text"
             name="name"
             placeholder="Your Name"
-            value={form.name}
-            onChange={handleChange}
             className="w-full p-3 rounded-lg border outline-none focus:ring-2 focus:ring-black"
             required
           />
@@ -88,8 +75,6 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Your Email"
-            value={form.email}
-            onChange={handleChange}
             className="w-full p-3 rounded-lg border outline-none focus:ring-2 focus:ring-black"
             required
           />
@@ -98,8 +83,6 @@ const Contact = () => {
             name="message"
             placeholder="Your Message"
             rows="5"
-            value={form.message}
-            onChange={handleChange}
             className="w-full p-3 rounded-lg border outline-none focus:ring-2 focus:ring-black"
             required
           />
